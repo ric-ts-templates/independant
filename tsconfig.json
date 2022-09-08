@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
 
-    "target": "es2020"
+    "target": "es2020" //Désormais tous les navigateurs modernes supportent ES6+ ! Donc pas de prise de tête inutile avec "ES5" !
 
     //,"sourceMap": true
 
