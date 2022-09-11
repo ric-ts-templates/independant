@@ -7,13 +7,13 @@
     <!-- root URL qui préfixera chaque URL ci-dessous<<<<<<<<<<<<<<<<<<<<<<< -->
     <base href="./"/> 
 
-    <!-- COMPILER avec __mysTSC2.bat !! -->
-    <!--    ATTENTION A LANCER DEPUIS UN SERVEUR WEB, si l'on n'utilise pas de Module Loader !!! -->  
-    <!-- ET NE PAS SE TROMPER : BIEN LANCER Le index.html du dossier dist/  et NON celui-ci !!
-         Ceci, juste pour une histoire de chemin relatif ci-dessous !!! (./js/...)
-    -->
+    <link rel="stylesheet" href="./css/index.css"/>
 
-    <script type="module"> //type="module" OBLIGATOIRE pour pouvoir réaliser un import d'élements exportés !
+    <!-- COMPILER via __mysTSC2.bat !! -->
+    <!--    ATTENTION A LANCER DEPUIS UN SERVEUR WEB, si l'on n'utilise pas de Module Loader !!! -->  
+    <!-- ET NE PAS SE TROMPER : BIEN LANCER Le index.html du dossier __dist/  et NON celui source !! -->
+
+    <script type="module"> //type="module" OBLIGATOIRE pour pouvoir réaliser un import ci-dessous.
       import {Main} from "./app/_main.js"; //Import, ici très localement, de la classe Main.
                                            // ATTENTION l'extension ".js" est OBLIGATOIRE sinon le navigateur râle !!!!
                                            // le "./" est aussi obligatoire.
@@ -22,6 +22,7 @@
 
   </head>
   <body onload="/*alert('Body onload running : exécuté en DERNIER');*/">
+    <p>HELLO !</p>
   </body>
 </html>
 

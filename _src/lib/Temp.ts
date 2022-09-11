@@ -1,1 +1,0 @@
-export let temp: number = (new Date()).getTime();
